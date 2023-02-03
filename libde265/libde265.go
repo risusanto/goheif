@@ -9,10 +9,14 @@ package libde265
 import "C"
 
 import (
+	"embed"
 	"fmt"
 	"image"
 	"unsafe"
 )
+
+//go:embed *.cc *.inl /extra/* /libde265/*
+var _ embed.FS
 
 type Decoder struct {
 	ctx        unsafe.Pointer
