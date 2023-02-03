@@ -1,5 +1,7 @@
 package extra
 
+import "C"
+
 import "embed"
 
 //go:embed *.c *.h

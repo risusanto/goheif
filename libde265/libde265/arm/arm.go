@@ -1,5 +1,7 @@
 package arm
 
+import "C"
+
 import "embed"
 
 //go:embed *.cc *.h

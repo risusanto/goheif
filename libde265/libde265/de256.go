@@ -1,5 +1,7 @@
 package libde265
 
+import "C"
+
 import (
 	"embed"
 
