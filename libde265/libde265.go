@@ -13,9 +13,12 @@ import (
 	"fmt"
 	"image"
 	"unsafe"
+
+	_ "github.com/risusanto/goheif/libde265/extra"
+	_ "github.com/risusanto/goheif/libde265/libde265"
 )
 
-//go:embed *.cc *.inl /extra/*.c /libde265/*.h /libde265/*.cc /libde265/*.in /libde265/x86/*.cc /libde265/x86/*.h /libde265/arm/*.h /libde265/arm/*.cc /libde265/arm/*.S
+//go:embed *.cc *.inl
 var _ embed.FS
 
 type Decoder struct {
